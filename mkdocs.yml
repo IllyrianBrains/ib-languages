@@ -1,0 +1,59 @@
+site_name: "IB-Languages"
+site_url: "https://illyrianbrains.github.io/ib-languages/"
+theme:
+  name: material
+  palette:
+    primary: "#9F2B68"
+    accent: "green"
+  font:
+    text: "Roboto"
+    code: "Courier New"
+  
+  features:
+    - navigation.tabs
+
+nav:
+  - Home: index.md
+  - Meso Shqip!: cities/malta.md
+  - Deutsch Lernen!:
+      - IB-LearningGerman: 
+          - About: learn-german/getting-started/about.md
+          - Groups: learn-german/getting-started/groups.md
+          - I live in DE/AU/CH: learn-german/getting-started/local.md
+      - Level-Based Learning:
+          - A1 - Starter: learn-german/levels/a1.md
+          - A2 - Elementary: learn-german/levels/a2.md
+          - B1 - Intermediate: learn-german/levels/b1.md
+          - B2 - Upper Intermediate: learn-german/levels/b2.md
+          - C1 - Advanced: learn-german/levels/c1.md
+          - C2 - Proficient: learn-german/levels/c2.md
+
+      - Exam Preparation:
+        - Exam Preparation Tips: teach-german/exam-preparation/tips.md
+        - Practice Tests: teach-german/exam-preparation/practice-tests.md
+        - Language Certifications:
+            - Goethe Institute Exams: learn-german/certifications/goethe.md
+            - TELC Exams: learn-german/certifications/telc.md
+            - TestDaF: learn-german/certifications/testdaf.md
+        
+      - Resources:
+          - Classes: teach-german/resources/classes.md
+          - Books: teach-german/resources/books.md
+          - TV Shows and Movies: learn-german/resources/tv-movies.md
+          - Music and Podcasts: learn-german/resources/music-podcasts.md
+          - Apps and Games: learn-german/resources/apps-games.md
+  - Contributors: participate.md
+
+extra_css:
+  - 'assets/styles.css'
+extra_javascript:
+  - 'assets/scripts.js'
+extra_templates:
+  - footer.html
+
+markdown_extensions:
+  - admonition
+
+extra:
+  inclusion:
+    post-content: "footer.html"
