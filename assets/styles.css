@@ -1,0 +1,202 @@
+/* Set maximum width and center align images */
+img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Program Sections */
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: yellow;
+    color: white;
+}
+
+
+/* Reverse section layout for alternating design */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Optional: Mobile Styling */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+}
+
+
+/* Center the main title */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Card styling */
+.card {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    border: 2px solid #b0b0b0; /* Grey top border */
+    border-bottom: 4px solid #b0b0b0; /* Grey top border */
+    border-right: 4px solid #b0b0b0; /* Grey top border */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+    min-height: 450px; /* Minimum height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Grey corner accent */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #b0b0b0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    z-index: 1;
+}
+
+/* Content and image alignment within cards */
+.section-content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    z-index: 2; /* Place content above grey corner */
+}
+
+.section-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Place image above grey corner */
+}
+
+.section-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Reverse section layout for alternating design */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* CTA Buttons */
+.cta-button {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 8px 20px;
+    color: black; /* Grey text color */
+    background-color: transparent;
+    border: 1px solid #606060; /* Grey border */
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #606060; /* Invert colors on hover */
+    color: #fff;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+}
+
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .city-block {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    text-align: center;
+  }
+  
+  .city-block:hover {
+    transform: translateY(-5px);
+  }
+  
+  .city-block img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .city-block h3 {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .city-block p {
+    padding: 0 1rem 1rem;
+    color: #666;
+  }
+  
+  .city-block a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
